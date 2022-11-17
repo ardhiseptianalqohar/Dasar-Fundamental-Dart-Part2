@@ -21,12 +21,11 @@ CLASS & OBJECT = Dalam sebuah sistem, sebuah class hanya ada satu.
 
 import 'dart:io';
 
-void main(List<String> args) {
+void main(List<String> args) { // UNTUK MENCARI LUAS DARI DUA OBJECT ANTARA KOTAK 1 DAN KOTAK 2 DI DUA PERSEGI PANJANG
   PersegiPanjang kotak1, kotak2;
   double luasKotak1;
 
-  //================================================
-  kotak1 = new PersegiPanjang();
+  kotak1 = PersegiPanjang(); //BISA juga PAKE new di sebelum PersegiPanjang nya
   kotak1.panjang = 2;
   kotak1.lebar = 3;
   // print(kotak1.toString());
@@ -49,7 +48,7 @@ void main(List<String> args) {
 }
 
 class PersegiPanjang {
-  double panjang;
+  double panjang; 
   double lebar;
 
   double hitungLuas() {

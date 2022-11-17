@@ -17,6 +17,8 @@ APA ITU OBJECT ?
 
 CLASS & OBJECT = Dalam sebuah sistem, sebuah class hanya ada satu. 
 -Sedangkan objek dari class tersebut dapat berjumlah lebih dari satu.
+
+TEKNIK ENKAPSULASI ADALAH TEKNIK PEMBUNGKUSAN
 */
 
 import 'dart:io';
@@ -31,7 +33,6 @@ void main(List<String> args) {
   kotak1 = new PersegiPanjang();
   kotak1.setPanjang(-2);
   kotak1.lebar = 3;
-  // print(kotak1.toString());
   //=================================================
 
   kotak2 = PersegiPanjang();
@@ -40,5 +41,4 @@ void main(List<String> args) {
 
   luasKotak1 = kotak1.hitungLuas();
   print(kotak1.getPanjang());
-  //=================================================
 }
